@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> RFD for Flights</title>
+		<link href="style.css" rel="stylesheet">
+		<script >
+			 var longitudeCoords;
+        var latitudeCoords ;
+        function getLocation() {
+		var longitudeCoords =27.180134;
+        var latitudeCoords = 31.189283;
+
+        }
+
+ 
+
+        function goPosition() {
+            if (longitudeCoords == 0 || latitudeCoords == 0)
+                getLocation();
+            var url = "http://maps.google.com/maps?q=" + latitudeCoords + ",+" + longitudeCoords;
+            location.replace(url);
+        }
+		function search()
+					{
+						alert("Not  available!!");
+					}
+			
+		</script>
+	</head>
+	<body >
+		<div class="bimg" >
+		</br></br>
+			<!--nav bar -->
+			<ul id "fr" >
+				<li><a href="#index">Flights</a></li>
+				<li><a href="cars.html">Cars<a></li>
+				<li><a href="hotels.html"> Hotels </a></li>
+				<li><a href="login.html">login</a></li>
+				</br>
+			</ul>
+			<p> We hope you get a pleasant trip </p>
+			<!--Hide return date -->
+			<span class="hbox">
+			<ul>
+				<li><a id="round" href="#">  Round Trip </a></li> 
+				<li><a id="one" href="#">  One Way </a></li> 
+			</ul>
+			</span>
+			<!-- textboxes -->
+			<span class="tbox">
+			<ul >
+				<li><input id="from"  type="text" placeholder=" Flying From "/></li>
+				<li><input id="to"  type="text" placeholder= " Flying TO " /></li>
+				<li><input id="ddate"  type="text" placeholder= "Depart date" /></li>
+				<li><input id="rdate"  type="text" placeholder= "Return date " /></li>
+				<li><input id="sflight"  type="button"  value="Search" onclick="search()"/> </li>
+				
+			</ul>
+			 </br></br></br></br>
+			</span>	
+		</div>
+		<center><p><h1>Some tourist destinations<h1></p></center>
+		<div id="sshow">
+		<a id="img1" href="egypt.html"  target="_blank"><img src="images/egypt1.jpg" onmouseover="src='images/egypt.jpg'" onmouseout="src= 'images/egypt1.jpg'"/></a>
+		<a id="imgn" href="new york.html"  target="_blank"><img src="images/new york1.jpg" onmouseover="src='images/new york.jpg'" onmouseout="src= 'images/new york1.jpg'"/></a>
+		<a id="imgl" href="los.html"  target="_blank"><img src="images/los1.jpg" onmouseover="src='images/los.jpg'" onmouseout="src= 'images/los1.jpg'"/></a>
+		<a id="imgk" href="kuwait.html"  target="_blank"><img src="images/kuwait1.jpg" onmouseover="src='images/kuwait.jpg'" onmouseout="src= 'images/kuwait1.jpg'"/></a>
+	</div>
+	
+	<div>
+			<nav class="social">
+          <ul>
+              <li><a href="https://twitter.com/">Twitter<img src="images/twet.png"></a></li>
+              <li><a href="https://facebook.com/">Facebook <img src="images/face.ico"></a></li>
+              <li><a href="https://www.linkedin.com/">	linkedin<img src="images/linked.png"> </a></li>
+          </ul>
+			</nav>
+		</div>
+		<div id="final" >
+			<ul>
+				<li><a href="about.html"> About us </a></li>
+			</ul>
+			<ul>
+				<li ><a id="rr" href="#" onclick="goPosition()">Contact</a></li>
+				<li><p>+996123459687</p></li>
+				<li><p>+996023678817</p></li>
+				<li><p>+996852741963</p></li>
+			</ul>
+			<ul>
+				<li><p>components</p></li>
+				<li><p>Cars</p></li>
+				<li><p>Hotels</p></li>
+				<li><p>Flights</p></li>
+			</ul>
+				
+			</br></br></br></br></br></br></br></br></br></br>
+			
+		</div>
+		
+	</body>
+</html>

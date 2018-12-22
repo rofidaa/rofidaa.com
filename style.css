@@ -1,0 +1,547 @@
+body{
+		margin:0px;
+	}	
+.bimg { 	
+		 background-image: url(images/bh.jpg);
+		 background-size:1370px 680px;
+         background-repeat: no-repeat;
+		 margin-top:0px;
+		 font-size: 40px;
+		 background-position:0px 0px;
+		 color:White;
+		 text-align: left;
+		 
+	}
+	.bimg ul {
+			list-style-type: none;
+			 margin-top:0px;
+			padding: 0;
+			overflow: hidden;   
+			padding-left: 70px
+			}
+	.bimg   ul  li  {
+				float: left;
+				padding:15px;
+			
+				
+			 }
+	.bimg ul li  a {
+				text-align:center;
+				text-decoration:none;
+				font-style: Maison Neue;
+				color:white;
+				font-size: 30px;
+			   }
+	.bimg ul li a:hover{
+						font-size: 40px;
+					}
+	.hbox ul li a{
+				font-size: 20px;
+			}
+	.hbox ul li a:hover{
+						text-decoration: underline;
+						font-size: 20px;
+					}
+			
+	.bimg p{
+			padding-left: 90px;
+			font-style: italic;
+			}
+	.tbox  ul {
+			list-style-type: none;
+			margin: 5px;
+			overflow: hidden; 
+			padding-left:90px;	
+			}
+	.tbox   ul  li  {
+				float: left;
+				padding:0px;
+				
+			 }
+	.tbox #from { 
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;	
+				}
+				
+	.tbox #to{
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;
+			  }
+	.tbox #ddate{
+
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				}		
+	.tbox #rdate{
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				}	
+    .tbox #sflight{
+					border:2px solid gray;
+					background-color:#FF4037;
+					color:#FFFFFF;
+					padding:17px;
+					text-align:center;
+					width: 250px;
+					font-size:13pt;
+				}	
+	 #img1 img {
+				margin-left: 250px;
+			}
+	 #imgl img  {
+				margin-left: 250px;
+				}
+				/*slid show*/
+     #imgs img 
+	              {
+             width:95%;
+             height:95%;
+			 position:absolute;
+			 top:0;
+			 left:0;
+			 margin-top:4%;
+			 margin-left:3%;
+			 transition: 1s;
+			 visibility:hidden;
+			}
+
+	#Snav 
+		 { 
+			display:block;
+			width:100%;
+			height:100%;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+
+	#SnavUp 
+		{
+			display:block;
+			width:100%;
+			height:20%;
+		}
+	#Scircles 
+		{
+			display:block;
+			width:5%;
+			height:15%;
+			margin-right:5%;
+			margin-top:2%;
+			float:right;       
+		}
+	#Scircles ul 
+		{
+			margin:0;
+			float:right;
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	#Scircles li
+		{
+			list-style:none;
+			display:block;
+			background-color:rgba(0, 0, 0, 1);
+			width:25%;
+			height:70%;
+			margin-top:50%;
+			margin-left:5%;
+			float:left;     
+			visibility:hidden;
+   
+			border-bottom-left-radius:25px;
+			border-top-left-radius:25px;
+			border-bottom-right-radius:25px;
+			border-top-right-radius:25px;
+
+		}
+	#SnavMiddle 
+		{
+			display:block;
+			width:100%;
+			height:15%;
+			margin-top:10%;    
+		}
+
+	#Sleft 
+		{
+			width:8%;
+			height:100%;
+			float:left;
+			margin-left:3%;
+			opacity:1;
+		}
+
+	#Sleft:hover 
+		{
+			opacity:0.8;
+		}
+	#Sright 
+		{
+			width:8%;
+			height:100%;
+			float:right;
+			margin-right:3%;
+			opacity:1;
+		}
+	#Sright:hover 
+		{
+			opacity:0.8;
+		}
+	#navbar ul{
+			    list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+	#navbar li {
+				float: left;
+				}
+	#navbar a:link, a:visited {
+								display: block;
+								width: 435px;
+								font-weight: bold;
+								color: #FFFFFF;
+								background-color: #423844;
+								text-align: center;
+								padding: 7px;
+								text-decoration: none;
+								text-transform:  uppercase;
+								font-size:20;
+							}
+	#tb1 td {
+			
+			}
+	#txt table tr td p{	
+			text-align: justify;
+			text-align-last: left;
+			font-size:20;
+			}
+/*car------------------------------------------------------------*/
+	.ncar{
+			 background-image: url(images/car.jpg);
+			 background-size: 100% 100%;
+			 margin-top:0;
+			background-repeat: no-repeat;
+			font-size: 30px;
+			background-position:0px 0px;
+			color:7D7D7D;
+			text-align: left;		
+			}
+	.ncar ul {
+			margin-top:0;
+			list-style-type: none;
+			margin: 5px;
+			padding: 0;
+			overflow: hidden;   
+			padding-left: 70px
+			}
+	.ncar   ul  li  {
+				float: left;
+				padding:15px;
+				margin-bottom=3px;
+				
+			 }
+	.ncar ul li  a {
+				text-align:center;
+				text-decoration:none;
+				font-style: Maison Neue;
+				color:7D7D7D;
+				font-size: 30px;
+			   }
+	.ncar ul li a:hover{
+						font-size: 40px;
+					}
+	.ncar p{
+			padding-left: 90px;
+			font-style: italic;
+			font-size:40;
+			margin-top:0px;
+			color:7D7D7D;
+			}
+	#dmenu ul {
+				margin:15px;
+			}
+	#dmenu li {
+			
+			margin-left:3px;
+			margin:2px;
+			padding:5px;
+			width:200px;
+			height:40px;
+			background:gray;
+			border:5px;
+			
+			}
+	
+	#menu option {
+				
+				width:200px;
+				height:20px;
+				font-size:20px fixed;
+				font-stretch: expanded;
+				color:black;
+				}
+	#brag ul li{
+			   font-size:25;
+			   margin:0;
+			   margin-left:2px;
+			   padding-top:0;
+			   padding-left:40px;
+			   color:white;
+			}
+	#bcar  ul {
+			list-style-type: none;
+			margin: 1px;
+			overflow: hidden; 
+			padding-left:90px;	
+			color:white;
+			}
+	#bcar ul  li  {
+				float: left;
+				padding:0px;
+				
+			 }
+			 #bcar #from { 
+				 width: 240px;
+				 height:50px;
+				 font-size:13pt;	
+				}
+				
+	#bcar #to{
+				 width: 240px;
+				 height:50px;
+				 font-size:13pt;
+			  }
+	#bcar #ddate{
+				border:2px solid gray;
+				background-color:#FFFFFF;
+				color:gray;
+				padding:13px;
+				text-align:center;
+				 width: 240px;
+				 font-size:13pt;
+				}		
+	
+    #bcar #sflight{
+				 border:2px solid gray;
+				background-color:#FF4037;
+				color:#FFFFFF;
+				padding:12px;
+				text-align:center;
+				width: 260px;
+				 font-size:13pt;
+				}	
+/*-------------------------------------------------*/	
+.hotel { 	
+		 background-image: url(images/hotel.jpg);
+		 background-size:cover;
+		 background-position:center center;
+		 position:relative;
+		 top:0;
+		 bottom:0;
+		 height:100vh;
+		 z-index=-10;
+        /* background-repeat: no-repeat;*/
+		 margin:0px;
+		 font-size: 40px;
+		 color:#F9FFFF;
+		 text-align: left;
+		 
+		 
+	}
+	.hotel ul {
+			list-style-type: none;
+			margin: 5px;
+			padding: 0;
+			overflow: hidden;   
+			padding-left: 70px
+			}
+	.hotel   ul  li  {
+				float: left;
+				padding:15px;
+				
+			 }
+	.hotel ul li  a {
+				text-align:center;
+				text-decoration:none;
+				font-style: Maison Neue;
+				color:white;
+				font-size: 30px;
+			   }
+	.hotel ul li a:hover{
+						font-size: 40px;
+					}
+	.txhotel ul li a{
+				font-size: 20px;
+			}
+			
+	.hotel  p{
+			padding-left:90px;
+			margin:0px;
+			font-size:40px;	
+			}
+	.txhotel  ul {
+			list-style-type: none;
+			margin: 5px;
+			overflow: hidden; 
+			padding-left:90px;	
+			}
+	.txhotel  ul  li  {
+				float: left;
+				padding:0px;
+				
+			 }
+	.txhotel #from { 
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				 
+				}
+				
+	.txhotel  #to{
+				 width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				 
+			  }
+	.txhotel  #ddate{
+				    width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				}		
+	.txhotel #rdate{
+				width: 230px;
+				 height:50px;
+				 font-size:13pt;
+				}	
+    .txhotel #sflight{
+				
+					border:2px solid gray;
+					background-color:#FF4037;
+					color:#FFFFFF;
+					padding:17px;
+					text-align:center;
+					width: 250px;
+					font-size:13pt;
+
+				}
+/*---------------------------------------------------------*/
+	#final {
+				background-color:#343B3A;
+				 background-size: 100% 100%;
+				 padding:100px;
+				 margin-top:10px;
+			}
+	#final ul {
+				
+				float: left;
+				padding:40px;
+				padding-left:50px;
+				text-decoration:none;
+				margin:10px;
+				margin-left:150px;
+				text-decoration:none;
+			}
+	#final ul li {
+				list-style-type: none;
+				text-align:center;
+				text-decoration:none;
+				font-style: Maison Neue;
+				color:white;
+				font-size: 20px;
+			   }
+    #final ul li a {
+				text-decoration:none;
+				text-align:left;
+				font-size: 20px;
+				margin=0;
+				}
+				#final ul li #r  a {
+				text-decoration:none;
+				font-size: 50px;
+				margin:30px;
+
+				}
+				#final ul li a #rr  {
+				font-size: 30px;
+				margin-top:10px;
+
+				}
+	.back  #vid{
+			background:url(about.mp4);
+			margin-left:0px;
+			padding:-1;
+			position:absolute;
+			z-index:-1000;
+			min-width:100%;
+			min-height:100%;
+			width:auto;
+			height:auto;
+			overflow:hidden;
+			top:0;
+			left:0;
+			}
+/*----------------------------------------------------------------------------*/
+	.social a {
+				color: #fff;
+				text-decoration: none;
+				}
+		.me {
+				width: 400px;
+				margin: 100px auto;
+			}
+
+		.social {
+					position: fixed;
+					top: 400px;
+				}
+		.social ul {
+					padding: 0px;
+					transform: translate(-260px, 0);
+  
+					}
+		.social ul li {
+					display: block;
+					margin: 5px;
+					background: rgba(0, 0, 0, 0.70);
+					width: 300px;
+					text-align: right;
+					padding: 10px;
+					border-radius: 0 30px 30px 0;
+					transition: all 1s;
+					}
+		.social ul li a {
+						font-size:20;
+					}
+		.social ul li:hover {
+							transform: translate(110px, 0);
+							background: rgba(255, 255, 255, 0.4);
+						}
+		.social ul li:hover a {
+							color: #000;
+  
+							}
+		.social ul li img {
+						margin-left: 10px;
+						color: #000;
+						background: #fff;
+						padding: 10px;
+						border-radius: 50%;
+						width: 20px;
+						height: 20px;
+						font-size: 20px;
+						background: #ffffff;
+						transform: rotate(0deg);
+						
+						}
+
+
+
+
+				

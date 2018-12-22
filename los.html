@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<title> LosAngeles </title>
+		<link href="style.css" rel="stylesheet">
+     <script type="text/javascript">
+        var nrImg = 3;  
+        var IntSeconds = 4;    
+
+        function Load()
+        {
+            nrShown = 0;
+            Vect = new Array(nrImg + 10);
+            Vect[0] = document.getElementById("Img1");
+            Vect[0].style.visibility = "visible";
+
+            document.getElementById("S" + 0).style.visibility = 'visible';
+
+            for (var i = 1; i < nrImg; i++)
+            {
+                Vect[i] = document.getElementById("Img" + (i + 1));
+                document.getElementById("S" + i).style.visibility = "visible";
+            }
+
+            document.getElementById("S" + 0).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Timer()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+        }
+        //next img
+        function next()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function prev()
+        {
+            nrShown--;
+            if (nrShown == -1)
+                nrShown = nrImg -1;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Effect()
+        {
+            for (var i = 0; i < nrImg; i++)
+            {
+                Vect[i].style.opacity = "0";   
+                Vect[i].style.visibility = "hidden";
+
+                document.getElementById("S" + i).style.backgroundColor = "rgba(0, 0, 0, 0.70)";
+            }
+            Vect[nrShown].style.opacity = "1";
+            Vect[nrShown].style.visibility = "visible";
+            document.getElementById("S" + nrShown).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+        }
+
+    </script>
+    <title></title>
+</head>
+<body onload="Load()">
+	<div id="navbar">
+		<ul  >
+				<li><a href="home.html">It's</a></li>
+				<li><a href="cars.html">amazing<a></li>
+				<li><a href="hotels.html"> losAngeles </a></li> 
+		</ul>
+	</div>
+    <div id="slider">
+        <div id="imgs">
+            <img id="Img3" src="images/12.jpg"/>
+            <img id="Img2" src="images/11.jpg"/>
+            <img id="Img1" src="images/10.jpg"/>
+        </div>
+        <div id="Snav">
+            <div id="SnavUp">
+                <div id="Scircles">
+                    <ul>
+                        <li id="S0"></li>
+                        <li id="S1"></li>
+                        <li id="S2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="SnavMiddle">
+                <img id="Sleft" src="images/left.png" onclick="prev()"/>
+                <img id="Sright" src="images/right.png" onclick="next()"/>
+            </div>
+        </div>
+    </div>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+		<div id="txt">
+		 <table border="0"; >
+            <tr>
+                <td width="50">&nbsp;</td>
+                <td width="1300">
+                    <h1 align="center">Cairo Tourist Profile:</h1>
+                    <hr color="red"/>
+                    <p>The sprawling city of Los Angeles, in Southern California, has long been known internationally in
+					the film and entertainment industry, particularly for Hollywood, a place that has drawn aspiring actors
+					and actresses from across the country for almost a century. Today, LA is a culturally diverse city, with
+					a growing culinary scene, incredible shopping, outstanding museums, and a reputation for being the
+					creative center of America.</br>
+					Sun seekers coming to enjoy the warm climate and beaches will find all kinds of things to do and 
+					interesting neighborhoods to explore. Recent upgrades to the public transportation network and the 
+					addition of a bike share program in downtown LA have made getting around and sightseeing easier than ever. For families, nearby Disneyland and Universal Studios are key destinations that often warrant repeat visits. Regardless of your interests, Los Angeles makes a perfect getaway.
+					</br>Griffith Park and Griffith Observatory:</br>
+					Griffith Park, in the eastern part of the Santa Monica Mountains, and covering an area
+					of 4,210 acres, is the largest state park in California. The park is home to the Los Angeles Zoo,
+					the Griffith Observatory, a planetarium, a Greek theater, a riding center created for the 1984 Olympic
+					Games, golf courses, tennis courts, hiking trails, and other attractions. Walking trails and scenic 
+					drives through the mountains offer views over the city and beyond.</br>
+					The Griffith Observatory is one of the city's most interesting experience-based attractions, 
+					and it's all free to the public. On the grounds are exhibits and telescopes. The main highlight 
+					is a look through the Zeiss telescope, used for viewing the moon and planets. You can use the 
+					telescopes free each evening the facility is open. Also on site are solar telescopes used for 
+					viewing the sun.</br>
+					The park and observatory are named for Griffith J. Griffith, who donated the greater part 
+					of the parkland to the city in 1896 and willed funds to the city for the creation of the observatory.
+					</br>Disneyland Resort </br>Just outside Los Angeles, Disneyland is California's premier family 
+					vacation destination. Disneyland Park, with rides and experiences in elaborately created theme sets,
+					is what most people picture when they imagine Disneyland. The Disneyland California Adventure Park, 
+					created during one of the expansions, holds even more action and adventure, with seven lands based 
+					on movie themes.</br>
+					Beyond the rides and Disney characters wandering the streets, the resort also offers a full complement
+					of features and services for a complete vacation. Hotels, restaurants, shopping, and all kinds
+					of entertainment options are available at Disneyland Resort.
+.</p>
+                </td>
+                <td width="400">&nbsp;</td>
+            </tr>
+        </table>
+		</div>
+		<div id="navbarr">
+			<ul>
+				<li><a href="index.html">Flights</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="hotels.html"> Hotels </a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		
+	</body>
+</html>

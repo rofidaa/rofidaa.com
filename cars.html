@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title> RFD for Flights</title>
+		<link href="style.css" rel="stylesheet">
+		<script >
+			function search()
+					{
+						alert("Not  available!!");
+					}
+		</script>
+	</head>
+	<body>
+		<div class="ncar" >
+		</br></br>
+			<ul >
+				<li><a href="index.html">Flights</a></li>
+				<li><a href="cars.html">Cars<a></li>
+				<li><a href="hotels.html"> Hotels </a></li> 
+				<li><a href="login.html">login</a></li> 
+			</ul>
+			<p> You can rent a car that you want in more than one country </p>
+			<div id="brag">
+				<ul>
+					<li>Pickup Country</li>
+					<li>Pickup City</li>
+				</ul>
+			</div>
+			<div id="dmenu">
+			
+				<ul> 
+					<li><select id="Menu" onchange="ShowItem()">
+							<option >&#x2002 &#x2002 &#x2002 Select &#x2002 &#x2002 &#x2002 &#x2002 &#x2002 &#x2002 &#x2002 &#x2002 &#x2002 &#x2002  </option>
+							<option value="A"> Egypt  </option>
+							<option value="B"> Aruba  </option>
+							<option value="C"> Australia  </option>
+							<option value="D"> Bahrain  </option>
+							<option value="E"> Albania  </option>
+							<option value="F"> Denmark  </option>
+							<option value="G"> Irac  </option>
+							<option value="G"> Tureky  </option>
+						</select>
+					</li>
+					<li><select id="Menu" onchange="ShowItem()">
+							<option >&#x2002 &#x2002 &#x2002 Select Pick Up City &#x2002 &#x2002 &#x2002  </option>
+							<option value="A"> Cairo  </option>
+							<option value="B"> London </option>
+							<option value="C"> Sydney </option>
+							<option value="D"> Riffa  </option>
+							<option value="E"> Tirana  </option>
+							<option value="F"> Vejle  </option>
+							<option value="G"> Irbil  </option>
+							<option value="G"> Istanbul </option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div id="brag">
+				<ul>
+					<li >Pickup Date &#x2002 &#x2002 &#x2002  &#x2002 </li>
+					<li>Pickup Time &#x2002 &#x2002 &#x2002 &#x2002  </li>
+					<li>Dropoff Date</li>
+					<li>Dropoff Time</li>
+				</ul>
+			</div>
+			<div id="bcar">
+				<ul >
+					<li><input id="from"  type="text" placeholder=" dd-mm-yy"/></li>
+					<li><input id="from"  type="text" placeholder=" 10"/></li>
+					<li><input id="ddate" type="text" placeholder=" dd-mm-yy"/></li>
+					<li><input id="to"  type="text" placeholder= "10" /></li>
+					<li><input id="sflight"  type="button"  value="Search" onclick="search()"/> </li>
+				
+				</ul>
+			</div>
+			 </br>
+			</br></br></br>
+			</br></br></br> 
+		</div>
+	</body>
+</html>

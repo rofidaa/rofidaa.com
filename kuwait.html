@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title> Egypt </title>
+		<link href="style.css" rel="stylesheet">
+     <script type="text/javascript">
+        var nrImg = 3;  
+        var IntSeconds = 4;    
+
+        function Load()
+        {
+            nrShown = 0;
+            Vect = new Array(nrImg + 10);
+            Vect[0] = document.getElementById("Img1");
+            Vect[0].style.visibility = "visible";
+
+            document.getElementById("S" + 0).style.visibility = 'visible';
+
+            for (var i = 1; i < nrImg; i++)
+            {
+                Vect[i] = document.getElementById("Img" + (i + 1));
+                document.getElementById("S" + i).style.visibility = "visible";
+            }
+
+            document.getElementById("S" + 0).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Timer()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+        }
+        //next img
+        function next()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function prev()
+        {
+            nrShown--;
+            if (nrShown == -1)
+                nrShown = nrImg -1;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Effect()
+        {
+            for (var i = 0; i < nrImg; i++)
+            {
+                Vect[i].style.opacity = "0";   //to add the fade effect
+                Vect[i].style.visibility = "hidden";
+
+                document.getElementById("S" + i).style.backgroundColor = "rgba(0, 0, 0, 0.70)";
+            }
+            Vect[nrShown].style.opacity = "1";
+            Vect[nrShown].style.visibility = "visible";
+            document.getElementById("S" + nrShown).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+        }
+
+    </script>
+    <title></title>
+</head>
+<body onload="Load()">
+	<div id="navbar">
+		<ul  >
+				<li><a href="index.html">It's</a></li>
+				<li><a href="cars.html">a beautiful </a></li>
+				<li><a href="hotels.html"> Kuwait</a></li> 
+		</ul>
+	</div>
+    <div id="slider">
+        <div id="imgs">
+            <!-- here you have to add the img tag -->
+            <img id="Img3" src="images/9.jpg"/>
+            <img id="Img2" src="images/8.jpg"/>
+            <img id="Img1" src="images/7.jpg"/>
+        </div>
+        <!--Here is going to be the left right buttons, the info and the imgs shown-->
+        <div id="Snav">
+            <!-- here is the circles , showes the current img -->
+            <div id="SnavUp">
+                <div id="Scircles">
+                    <ul>
+                        <!-- here you have to add the li tag-->
+                        <li id="S0"></li>
+                        <li id="S1"></li>
+                        <li id="S2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="SnavMiddle">
+                <img id="Sleft" src="images/left.png" onclick="prev()"/>
+                <img id="Sright" src="images/right.png" onclick="next()"/>
+            </div>
+        </div>
+    </div>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+		<div id="txt">
+		 <table border="0"; >
+            <tr>
+                <td width="50">&nbsp;</td>
+                <td width="1300">
+                    <h1 align="center">New York Tourist Profile:</h1>
+                    <hr color="red"/>
+                    <p> uwait City is the capital of Kuwait, marked by excellent museums, eclectic souqs and malls,
+					a world-class aquarium and stunning architecture. A fascinating history adds to these sights, and 
+					the capital remains one of the most intriguing cities in the region.Kuwait City is the capital of
+					Kuwait, marked by excellent museums, eclectic souqs and malls, a world-class aquarium and stunning
+					architecture. A fascinating history adds to these sights, and the capital remains one of the most 
+					intriguing cities in the region.
+					Best Time to Visit
+					November to April is the best time to visit the region. it is winter here during the time and weather
+					is pleasant.
+					Top Places to Visit in Kuwait City</br>
+					1. The Old Souq </br>
+					The Old Souq represents the city’s past, and the Arab Fund Building represents its bright future. 
+					The magnificent exterior gives way to an airy and light interior that is a tribute to the Arabic 
+					architectural principles of decoration, integrity of space and function. The sunny eight-story 
+					atrium opens to exquisite meeting rooms and extravagant corridors, and the region’s best traditional
+					craftsmanship is represented through lavish carpets, ceramic sculptures and woodwork. To see the 
+					extraordinary building, call to request an appointment with a tour guide.</br>
+					2. The Aquarium</br>
+					One of the most popular tourist draws in the capital is the Aquarium, housed in a sail-shaped building 
+					on the coast. It is the Middle East’s largest aquarium and home to a dizzying array of sea life that 
+					includes turtles, black-spotted sweetlips, giant spider crabs, living reefs, fluorescent jellyfish and 
+					more. Every display is interesting, but the most spectacular are the floor-to-ceiling wraparound ray and 
+					shark tanks.</br>
+					3. National Museum</br>
+					There are a number of impressive museums in Kuwait City, and one of the best is the National Museum.
+					During the Iraqi occupation, many of the exhibition halls were damaged, burned or looted, but intense
+					pressure from the international community has led to the return of many of the museum’s treasures. 
+					More than 2,000 pieces are now on display, detailing various aspects of the nation’s heritage, history
+					and culture. The best exhibits display ancient treasures found on Failaka Island and Hellenistic
+					limestone carvings.</br>
+					4. Tareq Rajab Museum</br>
+					The exquisite Tareq Rajab Museum is another one of Kuwait City’s finest. Housed in a sprawling 
+					villa, the ethnographic museum includes dazzling gold jewelry, costumes worn by peasants and princes, 
+					Jaipur enamels, inlaid musical instruments, Nepalese necklaces, Omani silver, Bahraini pearls and more.</br>
+					5. Al-Qurain Martyrs’ Museum</br>
+					One of the most moving spaces in the city is the Al-Qurain Martyrs’ Museum. The small museum is a memorial to not just the patriots but also to the other Kuwait City families who suffered during the Iraqi occupation.
+					Other places worth visiting in the capital include the Al-Hashemi Marine Museum, the quirky House of Mirrors, the famous Kuwait Towers, the Beit Dickson, home of British agent Colonel Harold Dickson, the extensive Corniche with its 10 kilometers of beaches, paths and parks, the Popular Traditional Museum and the Grand Mosque, the biggest of the capital’s more than 800 mosques.
+					</p>
+				</td>
+                <td width="400">&nbsp;</td>
+            </tr>
+        </table>
+		</div>
+		<a href="home.html">back to home</a>
+		
+	</body>
+</html>

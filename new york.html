@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<title> New YORK </title>
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript">
+        var nrImg = 3;  
+        var IntSeconds = 4;    
+
+        function Load()
+        {
+            nrShown = 0;
+            Vect = new Array(nrImg + 10);
+            Vect[0] = document.getElementById("Img1");
+            Vect[0].style.visibility = "visible";
+
+            document.getElementById("S" + 0).style.visibility = 'visible';
+
+            for (var i = 1; i < nrImg; i++)
+            {
+                Vect[i] = document.getElementById("Img" + (i + 1));
+                document.getElementById("S" + i).style.visibility = "visible";
+            }
+
+            document.getElementById("S" + 0).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Timer()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+        }
+        function next()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function prev()
+        {
+            nrShown--;
+            if (nrShown == -1)
+                nrShown = nrImg -1;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Effect()
+        {
+            for (var i = 0; i < nrImg; i++)
+            {
+                Vect[i].style.opacity = "0";  
+                Vect[i].style.visibility = "hidden";
+
+                document.getElementById("S" + i).style.backgroundColor = "rgba(0, 0, 0, 0.70)";
+            }
+            Vect[nrShown].style.opacity = "1";
+            Vect[nrShown].style.visibility = "visible";
+            document.getElementById("S" + nrShown).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+        }
+
+    </script>
+    <title></title>
+</head>
+<body onload="Load()">
+	<div id="navbar">
+		<ul  >
+				<li><a href="home.html">It's</a></li>
+				<li><a href="cars.html">amazing<a></li>
+				<li><a href="hotels.html"> NEW york </a></li> 
+		</ul>
+	</div>
+    <div id="slider">
+        <div id="imgs">
+           
+            <img id="Img3" src="images/6.jpg"/>
+            <img id="Img2" src="images/5.jpg"/>
+            <img id="Img1" src="images/4.jpg"/>
+        </div>
+        <div id="Snav">
+         
+            <div id="SnavUp">
+                <div id="Scircles">
+                    <ul>
+                        <li id="S0"></li>
+                        <li id="S1"></li>
+                        <li id="S2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="SnavMiddle">
+                <img id="Sleft" src="images/left.png" onclick="prev()"/>
+                <img id="Sright" src="images/right.png" onclick="next()"/>
+            </div>
+        </div>
+    </div>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+		<div id="txt">
+		 <table border="0"; >
+            <tr>
+                <td width="50">&nbsp;</td>
+                <td width="1300">
+                    <h1 align="center">New York Tourist Profile:</h1>
+                    <hr color="red"/>
+                    <p> The City of New York, often called New York City or simply New York, is the most populous
+					city in the United States. With an estimated 2016 population of distributed over a land area of
+					about 302.6 square miles (784 km2), New York City is also the most densely populated major
+					city in the United States. Located at the southern tip of the state of New York, the city 
+					is the center of the New York metropolitan area, one of the most populous urban agglomerations in 
+					the world.A global power city,New York City exerts a significant impact upon commerce,
+					finance, media, art, fashion, research, technology, education, and entertainment, its fast pace defining 
+					the term New York minute.</br> Home to the headquarters of the United Nations, 
+					New York is an important center for international diplomacy and has been described 
+					as the cultural, financial, and media capital of the world.</br>
+					Situated on one of the world's largest natural harbors, New York City consists of five boroughs, 
+					each of which is a separate county of New York State. The five boroughs – Brooklyn, Queens, 
+					Manhattan, The Bronx, and Staten Island – were consolidated into a single city in 1898. The city 
+					and its metropolitan area constitute the premier gateway for legal immigration to the United States,
+					and as many as 800 languages are spoken in New York, making it the most linguistically 
+					diverse city in the world. New York City is home to more than 3.2 million residents born 
+					outside the United States,[ the world's largest foreign-born population of any city.</br>
+					By 2016 estimates, the New York City metropolitan region remains by a significant margin the most
+					populous in the United States, as defined by both the Metropolitan Statistical Area (MSA), 
+					20.2 million residents,and the Combined Statistical Area (CSA), 23.7 million residents.</br>
+					 In 2013, the MSA produced a gross metropolitan product (GMP) of nearly US$1.39 trillion.</br>
+					 In 2012, the CSA generated a GMP of over US$1.55 trillion. NYC's MSA and CSA GDP are higher than
+					 the GDPs of all but 11 and 12 countries, respectively.</br>
+					New York City traces its origin to its 1624 founding in Lower Manhattan as a trading post by 
+					colonists of the Dutch Republic and was named New Amsterdam in 1626.</br> The city and its surroundings 
+					came under English control in 1664 and were renamed New York after King Charles II of England 
+					granted the lands to his brother, the Duke of York.</br> New York served as the capital of 
+					the United States from 1785 until 1790.
+					It has been the country's largest city since 1790.</br>
+					The Statue of Liberty greeted millions of immigrants as they came to the Americas by ship in the
+					late 19th and early 20th centuries and is a symbol of the United States and its democracy.</br>
+					In the 21st century, New York has emerged as a global node of creativity and entrepreneurship,
+					social tolerance, and environmental sustainability, and as a world symbol of freedom and 
+					cultural diversity.</br>
+					Many districts and landmarks in New York City have become well known, and the city received
+					a record 61 million tourists in 2016, hosting three of the world's ten most visited tourist 
+					attractions in 2013.</br>Several sources have ranked New York the most photographed city in the world.
+					</br>Times Square, iconic as the world's "heart" and its "Crossroads", is the brightly illuminated hub 
+					of the Broadway Theater District,one of the world's busiest pedestrian intersections, and a major 
+					center of the world's entertainment industry.</br> The names of many of the city's bridges, tapered
+					skyscrapers, and parks are known around the world.</br> Anchored by Wall Street in the Financial 
+					District of Lower Manhattan, New York City has been called both the most economically powerful
+					city and the leading financial center of the world, and the city is home to 
+					the world's two largest stock exchanges by total market capitalization, 
+					the New York Stock Exchange and NASDAQ.</br> Manhattan's real estate market is
+					among the most expensive in the world.</br> Manhattan's Chinatown incorporates
+					the highest concentration of Chinese people in the Western Hemisphere,
+					with multiple signature Chinatowns developing across the city.</br> Providing continuous 24/7 service,
+				    the New York City Subway is one of the most extensive metro systems worldwide, with 472 stations in 
+					operation. Over 120 colleges and universities are located in New York City, 
+					including Columbia University, New York University, and Rockefeller University, 
+					which have been ranked among the top 35 in the world.
+                </td>
+                <td width="400">&nbsp;</td>
+            </tr>
+        </table>
+		</div>
+		<div id="navbarr">
+			<ul>
+				<li><a href="index.html">Flights</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="hotels.html"> Hotels </a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
